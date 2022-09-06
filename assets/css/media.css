@@ -1,0 +1,294 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@media (max-width: 1024px) {
+    .bg-image {
+        background-attachment: scroll;
+    }
+}
+
+/*--------------------------------------------------------------
+# Counter
+--------------------------------------------------------------*/
+@media (min-width: 577px) {
+    .counter-box {
+        margin-bottom: 1.8rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Skill section
+--------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+    .testimonial-box .description {
+        padding: 0 8rem;
+    }
+}
+
+
+@media(max-width: 992px) {
+    .col-md-3 {
+        margin: 5px;
+    }
+}
+
+@media(max-width: 672px) {
+    #top {
+        height: 100%;
+    }
+
+    .col-md-3 {
+        flex: 0 0 47.4%;
+        margin: 5px auto;
+    }
+
+    .row {
+        padding: 10px;
+    }
+}
+
+@media(max-width: 425px) {
+    .col-md-3 {
+        flex: 0 0 99.4%;
+        margin: 20px auto;
+    }
+}
+
+/*------------------------------------------------------------------------
+* Mobile Navigation 
+-------------------------------------------------------------------------*/
+@media (max-width: 992px) {
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar-mobile ul {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+    /*--  header Starts --*/
+
+    /*-- nav Starts --*/
+
+
+    /*-- nav end --*/
+
+    /*-- header Ends --*/
+    /*-- HERO Section Starts --*/
+
+
+    /*-- HERO Section Ends --*/
+
+
+    /*-- About Section Starts --*/
+
+
+    /*-- About Section Ends --*/
+
+    /*-- portfolio Section Starts --*/
+
+
+    /*-- portfolio Section Ends --*/
+
+    /*-- SKILL Section Starts --*/
+    .testimonial-box .description {
+        padding: 0 13rem;
+    }
+
+
+    /*-- SKILL Section Ends --*/
+
+    /*-- curriculm vital Section Starts --*/
+
+
+    /*-- curriculm vital Section Ends --*/
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /*--  header Starts --*/
+
+    /*-- nav Starts --*/
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+
+
+    .navbar-mobile ul {
+        display: block;
+    }
+
+    /*-- nav end --*/
+
+    /*-- header Ends --*/
+    /*-- HERO Section Starts --*/
+
+
+    /*-- HERO Section Ends --*/
+
+
+    /*-- About Section Starts --*/
+
+
+    /*-- About Section Ends --*/
+
+    /*-- portfolio Section Starts --*/
+
+
+    /*-- portfolio Section Ends --*/
+
+    /*-- SKILL Section Starts --*/
+
+
+    /*-- SKILL Section Ends --*/
+
+    /*-- curriculm vital Section Starts --*/
+
+    .resume-container {
+        margin-top: 24px;
+    }
+
+    /*-- curriculm vital Section Ends --*/
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    /*--General--*/
+    .resumeBodyContainer>h6 {
+        padding-left: 0;
+    }
+
+    /*--nav section start--*/
+    .d-block-mobile {
+        display: block !important;
+    }
+
+
+    /*--nav section end--*/
+
+    /*--hero section start--*/
+
+    .title-a {
+        font-size: 1.6rem;
+    }
+
+    .title-left {
+        font-size: 1.6rem;
+    }
+
+    .btn-lg,
+    .lead {
+        font-size: 1rem;
+    }
+
+    .hero .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero .hero-subtitle {
+        font-size: 2.5rem;
+    }
+
+    .hero-single .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero .hero-title {
+        font-size: 2rem;
+    }
+
+
+    /*--hero section end--*/
+
+
+    /*-- About Section Starts --*/
+
+    .about-me {
+        padding-top: 0 !important;
+    }
+
+    .about-mf .box-shadow-full {
+        padding: 1rem;
+    }
+
+    .about-mf .about-img img {
+        margin-left: 0;
+    }
+
+    .about-mf .box-shadow-full .row {
+        padding: 0;
+    }
+
+    .about-info>p {
+        margin-bottom: 0.5rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    .socialImage {
+        font-size: 18px;
+    }
+
+    .about-mf .box-pl2 {
+        margin-top: 1rem;
+        padding-left: 0rem;
+    }
+
+    /*-- About Section Ends --*/
+
+    /*-- Portfolio Section Starts --*/
+
+    .work-img img {
+        height: auto !important;
+    }
+
+    /*-- Portfolio Section Ends --*/
+
+    /*curriculum vital section start--*/
+
+    .resume-container {
+        width: 100%;
+    }
+
+    .box-shadow-full {
+        padding: 3rem;
+    }
+
+    /*curriculum vital section end--*/
+    /*-- Skill Section Starts --*/
+
+    .resume-container {
+        height: auto;
+        margin-right: 0;
+    }
+
+    .testimonial-box .description {
+        padding: 0 5rem;
+    }
+
+    /*-- Skill Section Ends --*/
+
+    /*--  Contact section start --*/
+    .contact-mf .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+    }
+
+    /*--  Contact section end --*/
+}
