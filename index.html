@@ -209,7 +209,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="project1.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="pages/project1.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -219,9 +219,10 @@
           <!--Project-2-->
           <div class="col-md-6 col-lg-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/project2/Screenshot 2022-10-17 at 11.27.57.png" data-gallery="portfolioGallery"
+                class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                  <img src="assets/img/project2/Screenshot 2022-10-17 at 11.27.57.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -234,7 +235,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="project2.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="pages/project2.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -259,7 +260,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="Resturant.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="pages/Resturant.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -284,7 +285,7 @@
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="stickland.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="pages/stickland.html" target="_blank"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -580,42 +581,33 @@
                       </h5>
                     </div>
                     <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <!--<form action="contact-thank-you.html" id="emailContactForm" method="POST" role="form" class="email-form">-->
+                      <form action="contact-thank-you.html" id="emailContactForm" method="POST" role="form"
+                        class="email-form">
                         <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
+                          <div class="form-group col-md-6">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" class="form-control" id="firstname" required>
                           </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-outline-dark btn-lg">Send
-                              Message</button>
+                          <div class="form-group col-md-6">
+                            <label for="secondname">Second Name</label>
+                            <input type="text" class="form-control" name="secondname" id="secondname" required>
                           </div>
                         </div>
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="name">Message</label>
+                          <textarea class="form-control" name="message" id="message" rows="10" required></textarea>
+                        </div>
+                        <div class="my-3">
+                        </div>
+                        <div class="text-center"><button class="btn btn-outline-dark text-dark btn-lg m-1 "
+                            id="emailBtn" type="submit">Send Message</button></div>
+                        <br>
+
                       </form>
                     </div>
                   </div>
@@ -655,6 +647,29 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End main -->
+  <!-- Email confirmation Modal -->
+  <div class="modal fade" id="emailConfirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+          <button type="button" class="btn btn-secondary deleteClose" data-bs-dismiss="modal">Close</button>
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <p id="confirmationMessage"></p>
+
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary deleteClose" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer start -->
   <footer>
@@ -680,11 +695,35 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script>-->
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/jquery/jquery.min.js"></script>
 
+  <script>
+
+    $('#emailContactForm').on('submit', function (e) {
+      e.preventDefault();
+      var dataString = $(this).serialize();
+      $.ajax({
+        type: "POST",
+        url: "php/emailContact.php",
+        data: dataString,
+        success: function (result) {
+          console.log(result);
+          $('#confirmationMessage').html('Your Email has been sent, I will get in touch Shortly!');
+          $('#emailConfirmation').modal('show');
+          $('#emailContactForm')[0].reset();
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          console.log(errorThrown);
+          console.log(textStatus);
+          console.log(jqXHR);
+        },
+      });
+    });
+  </script>
 </body>
 
 </html>
